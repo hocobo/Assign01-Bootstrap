@@ -9,6 +9,7 @@ body {
 
 .jumbotron, .discounts {
     border: 1px solid #cecece;
+    margin-bottom: 0;
 }
 
 .toast {

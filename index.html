@@ -18,13 +18,13 @@
     <!-- toast -->
     <div id="toast" class="toast">
         <div class="toast-header">
-            <strong class="mr-auto" id="product">Product Name</strong>
+            <strong class="mr-auto" id="product"></strong>
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="toast-body">
-            Discount Code: <strong id="code">CODE</strong>
+            Discount Code: <strong id="code"></strong>
         </div>
     </div>
     <!-- navbar -->
@@ -82,14 +82,25 @@
                     Order today! Save 12.5% on Chef Anton's Italian Seasoning.
                     You don't want to make Chef Anton mad, do you?
                 </div>
-                <i>Discount expires: 2/25/2019</i><br />
-                <a href="#" class="code"><i class="far fa-hand-point-right"></i> Discount Code</a>
+                <i>Discount expires: 2/25/2023</i><br />
+                <a href="#" class="code" data-product="Italian Seasoning" data-code="1234"><i class="far fa-hand-point-right"></i> Discount Code</a>
         </div>
         <div class="col-md m-3 p-3 discounts">
-            Col 2
+            <h3>Go Green</h3>
+                <div class="mb-4">
+                    Genen Shouyu goes on sale very rarely. Order now to save 10% off our already low price.
+                </div>
+                <i>Discount expires: 2/25/2023</i><br />
+                <a href="#" class="code" data-product="Genen Shouyu" data-code="4321"><i class="far fa-hand-point-right"></i> Discount Code</a>
         </div>
         <div class="col-md m-3 p-3 discounts">
-            Col 3
+            <h3>Half Price</h3>
+                <div class="mb-4">
+                    Just because you can't pronounce "Mac n' Cheese" doesn't mean you shouldn't buy it.
+                    Get it now for 50% off!
+                </div>
+                <i>Discount expires: 2/25/2023</i><br />
+                <a href="#" class="code" data-product="Mac n' Cheese" data-code="2314"><i class="far fa-hand-point-right"></i> Discount Code</a>
         </div>
     </div>
       
