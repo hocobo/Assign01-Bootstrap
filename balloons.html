@@ -9,14 +9,43 @@
     <!--pickadate-->
     <link rel="stylesheet" href="css/default.css"></style>
     <link rel="stylesheet" href="css/default.date.css"></style>
+    <!-- animate.css -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Questrial" rel="stylesheet">
+    <!-- custom css -->
+        <style>
+            h1 {
+                font-family: 'Londrina Shadow';
+                color: slategray;
+                font-size: 3.5em;
+            }
+    
+            body {
+                font-family: 'Questrial';
+            }
+            h1.animate__animated {
+            display: inline-block;
+            }
+            .ball{
+            visibility: hidden;
+            }
+            .toast {
+            position: relative;
+            top: 20px;
+            right: 10px;
+            }
+
+            
+        </style>
 
 </head>
 <body>
     <body>
-
+        
         <!-- content -->
         <div class="container">
-            <h1>Happy Birthday!</h1><hr />
+            <h1 id = "animate">Happy Birthday!</h1><hr />
         <form role="form">
             <div class="row">
                 <div class="col-sm">
@@ -27,6 +56,29 @@
                     <div class="form-group">
                         <label for="birthday">Birthday</label>
                         <input type="text" class="form-control" id="birthday" placeholder="Enter birthday" />
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select your favorite balloons</h5>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="red">
+                                <label class="form-check-label" for="red">Red balloons</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="green">
+                                <label class="form-check-label" id = "green" for="green">Green balloons</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="blue">
+                                <label class="form-check-label" for="blue">Blue balloons</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary mt-3" id="checkall">Check All / Uncheck All</button>
+                    <button type="button" class="btn btn-outline-primary mt-3" id="submit">Submit</button>
+                    <!-- toast -->
+                    <div id="toast" class="toast">
+                        <strong>No balloons selected!!</strong>
                     </div>
                 </div>
                 <div class="col-sm">
